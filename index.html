@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="/css/style.css">
+
+    </head>
+    <body method>
+        <header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#contacts">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">What I do</a></li>
+                  </ul>
+            </nav>
+        </header>
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Hi, I am <strong>Amrit Dhaliwal</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Freelance Developer</p>
+            </section>
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Freelancer based in Kelowna BC, Canada</p>
+           
+           <div class="about-me__body">
+               <p>My name is Amrit Dhaliwal and this portfolio I have created is a representation of the knowledge I have acquired while obtaining my University degree. The projects I have used in the portfolio show the skills I have obtained over the years. My skills that might interest potential employers consist of Python, Tableau, Back-end frameworks Flask and Django, and SQL (mainly PostgreSQL).</p>
+               <p>I am always looking to increase my programming arsenal and am learning JavaScript for front-end web development. If I’m not programming you can still find me at my computer probably gaming since going outside is not a good idea in Covid times but, before these weird times I would love to hike on the beautiful Okanagan trails.</p>
+           </div>
+           
+           <img src="/img/portfolio_round.png" alt="Amrits portfolio picture" class="about-me__img">
+           <div>
+            <a href="/img/Dhaliwal_Amrit_Resume.pdf" class="btn" target="_blank">Resume</a>
+           </div>
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Scripting/Automation</h3>
+                    <p>I am currently freelance developing and developing Python scripts for data extraction or automation. Examples of these include parsing web sites to extract product details or extraction of emails. The scripts I develop aren’t limited to web sites but, can also be used to parse data from XML, KML, HTML, JSON, or TXT files. In the project section below is a project named KML file Extraction of Polygon data which I created for a local GIS Analyst to automate the extraction of polygon data and insert the data into a geodatabase.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Open-Source</h3>
+                    <p>Open-source projects are one of the best ways for new developers to acquire real-world experience. This is why I am currently spending a majority of my time contributing to a variety of open-source projects. Click on the button below to see a list of open-source projects I have contributed too.</p>
+                    <a class="btn-services" href="https://github.com/AmrDhaliwal/Open-Source" target="_blank">Code</a>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+        </section>
+        
+        <!-- My Work -->
+        <section class="sub-section-alternative" id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project1">
+                    <img class="project-image" src="/img/mountain.png" alt="Project One Image"/>
+                    <h3>Extraction of Polygon Data</h3>
+                    <p class="subtext">The purpose of this project was to extract data from multiple nodes in a KML file that was inaccessible by the GIS software ESRI. Data was exported to a Geodatabase for ESRI to interact with and automated the process of extracting the data and adding the geo fields to a database which made the script reusable for future KML file data extraction. Project done for a local GIS Analyst.</p>
+                    <hr/>
+                    <p class="btn-project"><a class="project-link" href="https://www.github.com/kubowania" target="_blank">Code</a></p>
+                </div>
+                <div class="project2">
+                  <img class="project-image" src="/img/portfolio-01.jpg" alt="Project One Image"/>
+                  <h3>Credit Analysis</h3>
+                  <p class="subtext">This project takes the data set called default of credit card clients from the UCI Machine Learning Repository and uses basic principles for Data Analysis such as cleaning, processing, and visualising data.</p>
+                  <hr/>
+                  <p class="btn-project"><a class="project-link" href="https://github.com/AmrDhaliwal/Analysis_of_Taiwan_Credit_Card_Data" target="_blank">Code</a></p>
+                  <p class="btn-project"><a class="project-link" href="https://public.tableau.com/profile/amrit.dhaliwal#!/vizhome/Dashboard_for_Taiwan_Credit_Card_Analysis/DatasetDescriptionandEDA?publish=yes" target="_blank">Live Demo</a></p>
+                </div>
+                <div class="project3">
+                  <img class="project-image" src="/img/gross.png" alt="Project One Image"/>
+                  <h3>Linear Regression using Scikit-Learn </h3>
+                  <p class="subtext">This project used some of the most basic principles Data Analysis such as data cleaning, exploratory data analysis, and data visualisation. The purpose of this project was do higher film budgets lead to more revenue in the box office? Using scikit-learn I created a linear regression that would help in answering this question.</p>
+                  <hr/>
+                  <p class="btn-project"><a class="project-link" href="https://github.com/AmrDhaliwal/DataAnalysis-Science/tree/main/Movie%2C%20budget%20and%20revenue%20using%20Seaborn%20and%20Scikit-learn" target="_blank">Code</a></p>
+                </div>
+                <div class="project4">
+                  <img class="project-image" src="/img/flask.png" alt="Project One Image"/>
+                  <h3>Flask Blog</h3>
+                  <p class="subtext">A fully functional blog website created using the Python framework Flask. Website is connected a PostgreSQL database and hosted on Heroku.</p>
+                  <hr/>
+                  <p class="btn-project"><a class="project-link" href="https://github.com/AmrDhaliwal/blog_flask" target="_blank">Code</a></p>
+                  <p class="btn-project"><a class="project-link" href="https://amrits-blog.herokuapp.com/" target="_blank">Live Demo</a></p>
+                </div>
+                <div class="project5">
+                    <img class="project-image" src="/img/google_keep.png" alt="Project One Image"/>
+                    <h3>Google Keep Clone</h3>
+                    <p class="subtext">A clone of Googles note taking service.</p>
+                    <hr/>
+                    <p class="btn-project"><a class="project-link" href="https://www.github.com/kubowania" target="_blank">Code</a></p>
+                    <p class="btn-project"><a class="project-link" href="https://www.github.com/kubowania" target="_blank">Live Demo</a></p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer" id="contacts">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link" target="_blank">amritdhaliwalz@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io/amrdhaliwal", target="_blank">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/amritdhal/", target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/AmrDhaliwal", target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="app.js"></script>
+        
+    </body>
+</html>
