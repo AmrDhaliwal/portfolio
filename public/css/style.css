@@ -477,7 +477,7 @@ a {
 
 .footer {
     background: var(--clr-darkist);
-    color: var(--clr-tan);
+    color: var(--clr-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
